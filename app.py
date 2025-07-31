@@ -3,11 +3,7 @@ import numpy as np
 import joblib
 import streamlit as st
 from streamlit_option_menu import option_menu
-import pickle
-from sklearn.linear_model import LinearRegression
-
 filename = 'D:/PYTHON/heart disease project/app/trained_model.sav'
-
 #loading the saved model
 loaded_model = joblib.load(open(filename, 'rb'))
 joblib.dump(loaded_model, filename)
